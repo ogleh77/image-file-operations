@@ -13,12 +13,11 @@ public class ProfileService {
         return FileStorage.addFile(image, candidatePath);
     }
 
-
     public byte[] getProfile(String profilePath) throws Exception {
         return FileStorage.findImage(profilePath, candidatePath);
     }
 
-    public String deleteImage(String filePath) throws Exception {
+    public boolean deleteImage(String filePath) throws Exception {
         return FileStorage.deleteImage(filePath, candidatePath);
     }
 

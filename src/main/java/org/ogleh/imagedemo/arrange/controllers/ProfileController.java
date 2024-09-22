@@ -31,7 +31,7 @@ public class ProfileController {
     }
 
     @DeleteMapping("/{path}")
-    public String deleteImage(@PathVariable String path) throws Exception {
+    public boolean deleteImage(@PathVariable String path) throws Exception {
         return profileService.deleteImage(path);
     }
 
